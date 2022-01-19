@@ -1,33 +1,94 @@
 {
   "store.home": {
     "blocks": [
-      "info-card#button-right",
-      "info-card#button-left"
+      "flex-layout.row#banner",
+      "flex-layout.row#logos"
     ]
   },
-  "info-card#button-right": {
+  "flex-layout.row#banner": {
+    "children": [
+      "slider-layout#home"
+    ]
+  },
+  "slider-layout#home": {
+    "children": [
+      "info-card#1",
+      "info-card#2"
+    ],
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      }
     }
   },
-  "info-card#button-left": {
+  "info-card#1": {
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-      "callToActionMode": "link",
-      "callToActionText": "Go to collection",
-      "textAlignment": "center"
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionText": "Subscribe",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.row#logos": {
+    "children": [
+      "slider-layout#logos"
+    ]
+  },
+  "slider-layout#logos": {
+    "children": [
+      "image#brand1",
+      "image#brand2",
+      "image#brand3",
+      "image#brand4",
+      "image#brand5",
+      "image#brand6"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "image#brand1": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square1.png"
+    }
+  },
+  "image#brand2": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square2.png"
+    }
+  },
+  "image#brand3": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square3.png"
+    }
+  },
+  "image#brand4": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square4.png"
+    }
+  },
+  "image#brand5": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square5.png"
+    }
+  },
+  "image#brand6": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png"
     }
   }
 }
